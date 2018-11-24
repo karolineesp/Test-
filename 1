@@ -1,0 +1,12 @@
+n = int(input('Hvilket tall vil du sjekke?'))
+if n == 1:
+    print('1 er ikke et primtall')
+else: 
+    for d in range(2,n):
+        if n % d ==0 :
+            print(f'{n} er ikke et primtall')
+            print(f'Det er blant annet delelig med {d}')
+            break 
+
+    else: 
+        print(f'{n} er et primtall')
